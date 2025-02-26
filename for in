@@ -1,0 +1,6 @@
+count = 0
+sum = 0
+for value in [1,2,5,6,8,33,566]:
+    count=count+1
+    sum=sum+value
+print(f"the quantitative detail for the set is: count: {count}, sum: {sum}, and average: {sum/count}")
