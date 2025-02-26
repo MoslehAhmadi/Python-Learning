@@ -1,0 +1,30 @@
+largest = None
+smallest = None
+numbers = [] 
+#I added the numbers list to record all of the int prompts from the user.
+
+while True:
+    num = input("Enter a number: ")
+    if num == "done":
+        break
+    try:
+        nums = int(num)
+        numbers.append(nums)
+    except:
+        print("Invalid input")
+        continue
+
+for n in numbers:
+    if largest is None:
+        largest = n
+    elif n > largest:
+        largest = n
+            
+    if smallest is None:
+        smallest = n
+    elif n < smallest:
+        smallest = n
+        
+
+print("Maximum is", largest)
+print("Minimum is", smallest)
