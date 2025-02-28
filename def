@@ -1,0 +1,10 @@
+def freq(string):
+    words = []
+    words = string.split()
+    dict = {}
+    for keyword in words:
+        dict[keyword] = words.count(keyword)
+    
+    print("the frequency of words is: ", dict)
+
+freq("banjal banjal banjaleh, miaw khroo hazahreh miaw miaw miawe banjareh hazahreh khroo miawe")
