@@ -1,0 +1,9 @@
+fname = input("Enter file name: ")
+
+fh = open(fname, "r")
+try:
+    for line in fh:
+        print(line.upper().strip())
+    fh.close()
+except:
+    print("Please enter a valid format")
