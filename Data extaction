@@ -1,0 +1,22 @@
+import re
+
+#In the first step I copy pasted the assignement txt into a txt file and saved it in my folder 
+
+txtfile = "Assignment-data.txt"
+
+with open(txtfile, "r") as file:
+    text = file.read()
+
+#In the second step after I opened and read the file as a whole string, I will extract the numbers and turn them into int
+
+num = re.findall("[0-9]+", text)
+
+numbers = list()
+
+for n in num:
+    n = int(n)
+    numbers.append(n)
+
+total = sum(numbers)
+
+print(total)
